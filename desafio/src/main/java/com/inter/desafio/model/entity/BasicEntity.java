@@ -20,7 +20,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @MappedSuperclass
-@EntityListeners(AuditingEntityListener.class)
 public abstract class BasicEntity  {
 
     @Id
