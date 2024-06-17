@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a975bbbf-c3d6-4f7e-88e1-156f8c2e2c81" name="Changes" comment="refatorando codigo">
-      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/config/AuditConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/config/AuditorAwareImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/RequestUserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/ResponseUserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/BasicEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/BasicEntity.java" afterDir="false" />
+    <list default="true" id="a975bbbf-c3d6-4f7e-88e1-156f8c2e2c81" name="Changes" comment="Incluindo classes de execoes">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_6_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_6_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_6_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_6_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/RequestUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/RequestUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/ResponseUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/ResponseUserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/WalletEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/WalletEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +26,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="2i15L1cgJpYUYoY1ht06y6EYyUZ" />
   <component name="ProjectLevelVcsManager">
@@ -45,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -92,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718645183103</updated>
-      <workItem from="1718645184491" duration="6256000" />
+      <workItem from="1718645184491" duration="16339000" />
     </task>
     <task id="LOCAL-00001" summary="refatorando codigo">
       <created>1718646138991</created>
@@ -101,7 +107,28 @@
       <option name="project" value="LOCAL" />
       <updated>1718646138991</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="iniciando controller e service do usuario.">
+      <created>1718653839608</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718653839608</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Corrigindo">
+      <created>1718654784677</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718654784677</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Incluindo classes de execoes">
+      <created>1718657015765</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718657015765</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +148,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="refatorando codigo" />
-    <option name="LAST_COMMIT_MESSAGE" value="refatorando codigo" />
+    <MESSAGE value="iniciando controller e service do usuario." />
+    <MESSAGE value="Corrigindo" />
+    <MESSAGE value="Incluindo classes de execoes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Incluindo classes de execoes" />
   </component>
 </project>

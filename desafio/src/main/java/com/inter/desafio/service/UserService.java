@@ -14,6 +14,6 @@ public interface UserService {
     ResponseUserDTO getById(Long id);
     ResponseUserDTO getByName(String name);
     ResponseUserDTO saveUser(RequestUserDTO user);
-    ResponseUserDTO updateUserById(Long id);
+    ResponseUserDTO updateUserById(Long id, RequestUserDTO request);
     String deleteUserById(Long id);
 }
