@@ -2,15 +2,18 @@ package com.inter.desafio.service;
 
 import com.inter.desafio.model.dto.RequestUserDTO;
 import com.inter.desafio.model.dto.ResponseUserDTO;
-import com.inter.desafio.model.entity.UserEntity;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public interface UserService {
 
-    UserEntity getAll();
+    List<ResponseUserDTO> getAll();
 
     ResponseUserDTO getById(Long id);
     ResponseUserDTO getByName(String name);
     ResponseUserDTO saveUser(RequestUserDTO user);
+    ResponseUserDTO updateUserById(Long id);
+    String deleteUserById(Long id);
 }

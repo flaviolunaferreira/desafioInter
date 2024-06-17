@@ -1,7 +1,5 @@
 package com.inter.desafio.model.dto;
 
-import jakarta.persistence.Column;
-import jakarta.validation.constraints.Email;
 import lombok.Getter;
 import lombok.Setter;
 

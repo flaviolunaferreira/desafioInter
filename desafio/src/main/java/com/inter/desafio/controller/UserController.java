@@ -2,16 +2,17 @@ package com.inter.desafio.controller;
 
 import com.inter.desafio.model.dto.RequestUserDTO;
 import com.inter.desafio.model.dto.ResponseUserDTO;
-import com.inter.desafio.model.entity.UserEntity;
 import com.inter.desafio.service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/user")
 public class UserController {
 
-    private UserService userService;
+    private final UserService userService;
 
 
     public UserController(UserService userService) {
@@ -19,7 +20,7 @@ public class UserController {
     }
 
     @GetMapping("/")
-    public ResponseEntity<UserEntity> getAll() {
+    public ResponseEntity<List<ResponseUserDTO>> getAll() {
         return ResponseEntity.ok().body( userService.getAll() );
     }
 
@@ -36,5 +37,15 @@ public class UserController {
     @PostMapping("/")
     public ResponseEntity<ResponseUserDTO> saveUser(@RequestBody RequestUserDTO user) {
         return ResponseEntity.ok().body(userService.saveUser(user));
+    }
+
+    @PutMapping("/id/{id}")
+    public ResponseEntity<ResponseUserDTO> updateUserById(@PathVariable Long id) {
+        return ResponseEntity.ok().body(userService.updateUserById(id));
+    }
+
+    @DeleteMapping("/id/{id}")
+    public ResponseEntity<String> deleteUserById(@PathVariable Long id) {
+        return ResponseEntity.ok().body(userService.deleteUserById(id));
     }
 }

@@ -1,9 +1,5 @@
 package com.inter.desafio.model.dto;
 
-import jakarta.annotation.Nullable;
-import jakarta.persistence.Column;
-import jakarta.validation.constraints.Email;
-
 public class ResponseUserDTO {
 
     private Long id;
