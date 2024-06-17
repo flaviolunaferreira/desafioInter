@@ -17,9 +17,15 @@ import jakarta.persistence.MappedSuperclass;
 import lombok.Getter;
 import lombok.Setter;
 
+
+/**
+ * Classe base para todas as entidades.
+ * Inclui campos comuns como id, datas de criação e modificação, e usuários responsáveis.
+ */
 @Getter
 @Setter
 @MappedSuperclass
+@EntityListeners(AuditingEntityListener.class)
 public abstract class BasicEntity  {
 
     @Id
