@@ -1,11 +1,13 @@
 package com.inter.desafio.service.impl;
 
+import com.inter.desafio.exception.DuplicateValue;
 import com.inter.desafio.exception.NotFound;
 import com.inter.desafio.model.dto.RequestUserDTO;
 import com.inter.desafio.model.dto.ResponseUserDTO;
 import com.inter.desafio.model.entity.UserEntity;
 import com.inter.desafio.model.repository.UserRepository;
 import com.inter.desafio.service.UserService;
+import org.apache.catalina.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -32,8 +34,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ResponseUserDTO getByName(String name) {
-        return null;
+    public List<ResponseUserDTO> getByName(String nome) {
+        List<UserEntity> users =   findByName(nome);
+        if (users.isEmpty()) throw ( new DuplicateValue("Sinto Muito... Não tenho um usuário cadastrado com esse nome"));
+        return users.stream().map(ResponseUserDTO::new).collect(Collectors.toList());
     }
 
     @Override
@@ -62,6 +66,10 @@ public class UserServiceImpl implements UserService {
 
     private UserEntity findById(Long id) throws NotFound {
         return userRepository.findById(id).orElseThrow(() -> new NotFound("Usuario não cadastrado com id : " + id));
+    }
+
+    private List<UserEntity> findByName(String nome) throws DuplicateValue {
+        return userRepository.findByNomeIgnoreCase(nome);
     }
 
 }

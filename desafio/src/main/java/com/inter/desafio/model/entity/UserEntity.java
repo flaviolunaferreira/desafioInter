@@ -1,6 +1,7 @@
 package com.inter.desafio.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.inter.desafio.uteis.CapitalizeNames;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.validation.constraints.Email;
@@ -17,12 +18,10 @@ import org.springframework.context.annotation.Description;
 @NoArgsConstructor
 public class UserEntity extends BasicEntity {
 
-    @NotNull
-    @NotBlank
     @Schema(description = "Nome do Titular da conta.")
     private String nome;
 
-    @Email
+    @Email(message = "Preciso que você informe um email válido.")
     private String email;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
@@ -31,7 +30,7 @@ public class UserEntity extends BasicEntity {
     private String cpfCnpj;
 
     public UserEntity( String nome, String email, String senha, String cpfCnpj) {
-        this.nome = nome;
+        this.nome = CapitalizeNames.capitalizeName(nome);
         this.email = email;
         this.senha = senha;
         this.cpfCnpj = cpfCnpj;

@@ -1,6 +1,7 @@
 package com.inter.desafio.model.dto;
 
 import com.inter.desafio.model.entity.UserEntity;
+import com.inter.desafio.uteis.RetornaCpfOuCnpj;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,6 +19,7 @@ public class ResponseUserDTO {
     private String nome;
     private String email;
     private String cpfCnpj;
+    private String tipoPessoa;
     private String createdBY;
     private LocalDateTime createdDate;
 
@@ -26,6 +28,7 @@ public class ResponseUserDTO {
         this.nome = userEntity.getNome();
         this.email = userEntity.getEmail();
         this.cpfCnpj = userEntity.getCpfCnpj();
+        this.tipoPessoa = RetornaCpfOuCnpj.validarCpfOuCnpj(userEntity.getCpfCnpj());
         this.createdBY = userEntity.getCreatedBy();
         this.createdDate = userEntity.getCreatedDate();
     }
