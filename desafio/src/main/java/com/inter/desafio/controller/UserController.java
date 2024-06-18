@@ -3,6 +3,8 @@ package com.inter.desafio.controller;
 import com.inter.desafio.model.dto.RequestUserDTO;
 import com.inter.desafio.model.dto.ResponseUserDTO;
 import com.inter.desafio.service.UserService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/user")
+@Tag(name = "User API", description = "End point´s do cadastro de usuarios disponíveis na aplicação.")
 public class UserController {
 
     private final UserService userService;
@@ -20,6 +23,7 @@ public class UserController {
     }
 
     @GetMapping("/")
+    @Operation(summary = "Lista todos os usuários cadastrados")
     public ResponseEntity<List<ResponseUserDTO>> getAll() {
         return ResponseEntity.ok().body( userService.getAll() );
     }

@@ -1,15 +1,15 @@
 package com.inter.desafio.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.inter.desafio.model.dto.RequestUserDTO;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.context.annotation.Description;
 
 @Entity
 @Getter
@@ -19,6 +19,7 @@ public class UserEntity extends BasicEntity {
 
     @NotNull
     @NotBlank
+    @Schema(description = "Nome do Titular da conta.")
     private String nome;
 
     @Email

@@ -4,19 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a975bbbf-c3d6-4f7e-88e1-156f8c2e2c81" name="Changes" comment="Incluindo classes de execoes">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_6_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_6_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_6_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_6_3_0.xml" beforeDir="false" />
+    <list default="true" id="a975bbbf-c3d6-4f7e-88e1-156f8c2e2c81" name="Changes" comment="iniciando crud... (getId, save, getall)">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_17_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_2_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_2_2_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_2_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_14_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_common_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_ui_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webmvc_core_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_swagger_ui_4_18_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafio/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/RequestUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/RequestUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/ResponseUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/ResponseUserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +60,8 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -98,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718645183103</updated>
-      <workItem from="1718645184491" duration="16339000" />
+      <workItem from="1718645184491" duration="26186000" />
     </task>
     <task id="LOCAL-00001" summary="refatorando codigo">
       <created>1718646138991</created>
@@ -128,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718657015765</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="iniciando crud... (getId, save, getall)">
+      <created>1718665689747</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718665689747</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +164,7 @@
     <MESSAGE value="iniciando controller e service do usuario." />
     <MESSAGE value="Corrigindo" />
     <MESSAGE value="Incluindo classes de execoes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Incluindo classes de execoes" />
+    <MESSAGE value="iniciando crud... (getId, save, getall)" />
+    <option name="LAST_COMMIT_MESSAGE" value="iniciando crud... (getId, save, getall)" />
   </component>
 </project>
