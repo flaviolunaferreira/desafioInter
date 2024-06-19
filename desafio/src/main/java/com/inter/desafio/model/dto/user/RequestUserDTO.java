@@ -1,4 +1,4 @@
-package com.inter.desafio.model.dto;
+package com.inter.desafio.model.dto.user;
 
 import com.inter.desafio.model.entity.UserEntity;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -28,4 +28,5 @@ public class RequestUserDTO {
     public UserEntity newUser() {
         return new UserEntity(nome, email, senha, cpfCnpj);
     }
+
 }

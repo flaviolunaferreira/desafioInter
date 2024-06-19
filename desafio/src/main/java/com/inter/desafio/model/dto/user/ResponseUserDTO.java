@@ -1,4 +1,4 @@
-package com.inter.desafio.model.dto;
+package com.inter.desafio.model.dto.user;
 
 import com.inter.desafio.model.entity.UserEntity;
 import com.inter.desafio.uteis.RetornaCpfOuCnpj;

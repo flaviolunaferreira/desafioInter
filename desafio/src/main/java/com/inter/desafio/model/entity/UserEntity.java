@@ -5,12 +5,13 @@ import com.inter.desafio.uteis.CapitalizeNames;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.context.annotation.Description;
+
+import java.math.BigDecimal;
+import java.util.List;
 
 @Entity
 @Getter
@@ -19,6 +20,7 @@ import org.springframework.context.annotation.Description;
 public class UserEntity extends BasicEntity {
 
     @Schema(description = "Nome do Titular da conta.")
+    @NotNull
     private String nome;
 
     @Email(message = "Preciso que você informe um email válido.")
@@ -28,6 +30,10 @@ public class UserEntity extends BasicEntity {
     private String senha;
 
     private String cpfCnpj;
+
+    private Double saldoReal;
+
+    private Double SaldoDolar;
 
     public UserEntity( String nome, String email, String senha, String cpfCnpj) {
         this.nome = CapitalizeNames.capitalizeName(nome);

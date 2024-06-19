@@ -1,7 +1,7 @@
 package com.inter.desafio.service;
 
-import com.inter.desafio.model.dto.RequestUserDTO;
-import com.inter.desafio.model.dto.ResponseUserDTO;
+import com.inter.desafio.model.dto.user.RequestUserDTO;
+import com.inter.desafio.model.dto.user.ResponseUserDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

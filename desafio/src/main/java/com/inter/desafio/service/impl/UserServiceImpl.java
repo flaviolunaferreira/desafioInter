@@ -2,12 +2,11 @@ package com.inter.desafio.service.impl;
 
 import com.inter.desafio.exception.DuplicateValue;
 import com.inter.desafio.exception.NotFound;
-import com.inter.desafio.model.dto.RequestUserDTO;
-import com.inter.desafio.model.dto.ResponseUserDTO;
+import com.inter.desafio.model.dto.user.RequestUserDTO;
+import com.inter.desafio.model.dto.user.ResponseUserDTO;
 import com.inter.desafio.model.entity.UserEntity;
 import com.inter.desafio.model.repository.UserRepository;
 import com.inter.desafio.service.UserService;
-import org.apache.catalina.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

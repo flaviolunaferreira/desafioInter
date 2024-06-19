@@ -1,7 +1,7 @@
 package com.inter.desafio.controller;
 
-import com.inter.desafio.model.dto.RequestUserDTO;
-import com.inter.desafio.model.dto.ResponseUserDTO;
+import com.inter.desafio.model.dto.user.RequestUserDTO;
+import com.inter.desafio.model.dto.user.ResponseUserDTO;
 import com.inter.desafio.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

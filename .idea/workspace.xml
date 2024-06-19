@@ -4,22 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a975bbbf-c3d6-4f7e-88e1-156f8c2e2c81" name="Changes" comment="Incluindo swagger na aplicacao...">
-      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/uteis/CapitalizeNames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/uteis/RetornaCpfOuCnpj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/uteis/ValidarCnpj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/uteis/ValidarCpf.java" afterDir="false" />
+    <list default="true" id="a975bbbf-c3d6-4f7e-88e1-156f8c2e2c81" name="Changes" comment="Iniciando documentação e incluindo validações">
+      <change afterPath="$PROJECT_DIR$/Desafio Inter Cross Border.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/controller/CotacaoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/controller/TransactionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/TipoDeMoeda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/Transaction/RequestTransactionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/CotacaoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/TransactionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/repository/CotacaoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/CotacaoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/impl/CotacaoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/impl/TransactionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/uteis/AjustarParaUltimoDiaUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafio/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/controller/ExceptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/controller/ExceptionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/RequestUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/RequestUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/ResponseUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/ResponseUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/RequestUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/user/RequestUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/ResponseUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/dto/user/ResponseUserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/model/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -37,8 +45,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2i15L1cgJpYUYoY1ht06y6EYyUZ" />
   <component name="ProjectLevelVcsManager">
@@ -55,17 +68,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/desafio/src/main/java/com/inter/desafio/service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cross_border_service" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.inter.desafio.model.dto" />
       <recent name="com.inter.desafio.service" />
+      <recent name="com.inter.desafio.model.dto" />
     </key>
   </component>
   <component name="RunManager" selected="Application.DesafioApplication">
@@ -89,6 +106,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.DesafioApplication" />
+      <item itemvalue="Spring Boot.DesafioApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DesafioApplication" />
@@ -103,7 +124,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718645183103</updated>
-      <workItem from="1718645184491" duration="38604000" />
+      <workItem from="1718645184491" duration="44052000" />
+      <workItem from="1718749743844" duration="1459000" />
+      <workItem from="1718799024104" duration="20249000" />
     </task>
     <task id="LOCAL-00001" summary="refatorando codigo">
       <created>1718646138991</created>
@@ -147,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718713219553</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Iniciando documentação e incluindo validações">
+      <created>1718744115497</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718744115497</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +193,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -172,6 +203,7 @@
     <MESSAGE value="Incluindo classes de execoes" />
     <MESSAGE value="iniciando crud... (getId, save, getall)" />
     <MESSAGE value="Incluindo swagger na aplicacao..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Incluindo swagger na aplicacao..." />
+    <MESSAGE value="Iniciando documentação e incluindo validações" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iniciando documentação e incluindo validações" />
   </component>
 </project>
