@@ -31,9 +31,9 @@ public class UserEntity extends BasicEntity {
 
     private String cpfCnpj;
 
-    private Double saldoReal;
+    private Double saldoReal = 100000D;
 
-    private Double SaldoDolar;
+    private Double SaldoDolar = 50000D;
 
     public UserEntity( String nome, String email, String senha, String cpfCnpj) {
         this.nome = CapitalizeNames.capitalizeName(nome);

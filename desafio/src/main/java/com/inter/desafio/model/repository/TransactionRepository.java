@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface TransactionRepository extends JpaRepository<TransactionEntity, Long> {
     List<TransactionEntity> findByUsuarioId(Long usuarioId);
-    List<TransactionEntity> findByUsuarioIdOrDestinatarioId(Long usuarioId, Long destinatarioId);
+    List<TransactionEntity> findByUsuarioIdOrDestinatarioIdOrderByDataAsc(Long usuarioId, Long destinatarioId);
     List<TransactionEntity> findByUsuarioIdAndData(Long usuarioId, LocalDateTime data);
 }

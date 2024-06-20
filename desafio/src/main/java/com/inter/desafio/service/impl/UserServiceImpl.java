@@ -2,11 +2,13 @@ package com.inter.desafio.service.impl;
 
 import com.inter.desafio.exception.DuplicateValue;
 import com.inter.desafio.exception.NotFound;
+import com.inter.desafio.exception.ViolationIntegrity;
 import com.inter.desafio.model.dto.user.RequestUserDTO;
 import com.inter.desafio.model.dto.user.ResponseUserDTO;
 import com.inter.desafio.model.entity.UserEntity;
 import com.inter.desafio.model.repository.UserRepository;
 import com.inter.desafio.service.UserService;
+import com.inter.desafio.uteis.RetornaCpfOuCnpj;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -41,6 +43,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public ResponseUserDTO saveUser(RequestUserDTO user) {
+        String cpfCnpj = user.getCpfCnpj();
+        if (cpfCnpj != null && !cpfCnpj.isEmpty()) {
+            String cpfCnpjStatus = RetornaCpfOuCnpj.validarCpfOuCnpj(cpfCnpj);
+            if (cpfCnpjStatus.equals("Não Informado")) {
+                throw new IllegalArgumentException("CPF ou CNPJ inválido.");
+            }
+        }
         UserEntity result = user.newUser();
         return new ResponseUserDTO(userRepository.save(result));
     }
@@ -58,8 +67,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String deleteUserById(Long id) {
-        return null;
+    public String deleteUserById(Long id) throws ViolationIntegrity {
+        try {
+            UserEntity user = findById(id);
+            userRepository.delete(user);
+            return "Registro apagado com sucesso!";
+        } catch (Exception e) {
+            throw new ViolationIntegrity("Erro ao tentar deletar o usuário com id: " + id, e);
+        }
     }
 
 

@@ -20,7 +20,7 @@ public class ResponseUserDTO {
     private String email;
     private String cpfCnpj;
     private String tipoPessoa;
-    private String createdBY;
+    private double saldo;
     private LocalDateTime createdDate;
 
     public ResponseUserDTO(UserEntity userEntity) {
@@ -29,7 +29,7 @@ public class ResponseUserDTO {
         this.email = userEntity.getEmail();
         this.cpfCnpj = userEntity.getCpfCnpj();
         this.tipoPessoa = RetornaCpfOuCnpj.validarCpfOuCnpj(userEntity.getCpfCnpj());
-        this.createdBY = userEntity.getCreatedBy();
+        this.saldo = userEntity.getSaldoReal();
         this.createdDate = userEntity.getCreatedDate();
     }
 }

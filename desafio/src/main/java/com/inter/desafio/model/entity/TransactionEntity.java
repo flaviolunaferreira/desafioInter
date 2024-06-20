@@ -30,6 +30,8 @@ public class TransactionEntity {
 
     private TipoDeMoeda moeda;
 
+    private Double saldoAnterior;
+
     private Double valor;
 
     private LocalDateTime data;

@@ -82,7 +82,7 @@ public class CotacaoServiceImpl implements CotacaoService {
     }
 
     // Ajustando a data para sexta-feira quando cair no final de semana
-    private LocalDate ajustarParaUltimoDiaUtil(LocalDate date) {
+    LocalDate ajustarParaUltimoDiaUtil(LocalDate date) {
         DayOfWeek dayOfWeek = date.getDayOfWeek();
         if (dayOfWeek == DayOfWeek.SATURDAY) {
             return date.minusDays(1);
